@@ -8,7 +8,7 @@ class SiteHeader extends HTMLElement {
     this.innerHTML = `
         <div class="header">
           <div class="logo">
-            <a href="#">${data.text}<span class="accent">${data.span}</span></a>
+            <a href="/">${data.text}<span class="accent">${data.span}</span></a>
           </div>
           <nav class="nav">
             <button onclick="openLeadModal()" class="">Fale Conosco</button>
