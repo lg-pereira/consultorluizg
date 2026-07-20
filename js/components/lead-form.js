@@ -89,6 +89,13 @@ class LeadModal extends HTMLElement {
 customElements.define("lead-modal", LeadModal);
 
 const form = document.querySelector(".leadmodal-form");
+const cityInput = document.querySelector("#city");
+const stateInput = document.querySelector("#state");
+
+getAdressByIP().then((data) => {
+  cityInput.value = data[0];
+  stateInput.value = data[1];
+});
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
