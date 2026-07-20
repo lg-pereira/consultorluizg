@@ -1,0 +1,48 @@
+
+main {
+    display: grid;
+}
+
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: var(--spacing-md);
+    gap: var(--spacing-xl);
+    align-items: start;
+}
+
+.imgbox-section {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding: var(--spacing-md);
+    gap: var(--spacing-xl);
+    align-items: start;
+}
+
+.cards-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: var(--spacing-md);
+    gap: var(--spacing-xl);
+    align-items: start;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.cta-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: var(--spacing-md);
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+}

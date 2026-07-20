@@ -1,0 +1,58 @@
+
+#hero {
+    background-color: var(--color-white);
+    padding: var(--spacing-xl);
+}
+
+#pain {
+    background-color: var(--color-background-2);
+    padding: var(--spacing-xl) var(--spacing-md);
+}
+
+#pain span {
+    color: var(--color-red);
+    font-weight: var(--font-black);
+}
+
+#solve, #testmonials {
+    background-color: var(--color-white);
+    padding: var(--spacing-xl) var(--spacing-md);
+}
+
+#solve .img-box img {
+    border-radius: var(--radius-xl);
+    justify-self: center;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
+
+#solve .imgbox-section {
+    grid-template-columns: 1fr 1fr;
+}
+
+#solve .img-box {
+    order: 2;
+}
+
+#solve .imgbox-content {
+    order: 1;
+}
+
+#solve button {
+    justify-self: center;
+    width: 100%;
+}
+
+#benefits, #cases {
+    background-color: var(--color-background-2);
+    padding: var(--spacing-xl) var(--spacing-md);
+}
+
+#cases h2 {
+    color: var(--color-primary);
+}
+
+#finalCTA {
+    background-color: var(--color-secondary);
+    padding: var(--spacing-xl) var(--spacing-md);
+}

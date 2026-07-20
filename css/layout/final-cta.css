@@ -1,0 +1,44 @@
+.cta-section {
+    color: var(--color-white);
+    align-items: center;
+    text-align: center;
+    text-shadow: var(--drop-shadow-md);
+}
+
+
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.cta-content h2 {
+    font-family: var(--font-heading);
+    font-size: var(--text-2xl);
+    font-weight: var(--font-extrabold);
+    line-height: 1.2; 
+}
+
+.cta-content span {
+    color: var(--color-background-3);
+}
+
+.cta-content h3 {
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    font-weight: var(--font-bold);
+}
+
+.final-cta {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+    

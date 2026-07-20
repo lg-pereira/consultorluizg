@@ -1,0 +1,19 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-black);
+  line-height: 1.7;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+img { max-width: 100%; display: block; }
+
+site-header,
+site-footer,
+site-hero,
+site-cards,
+site-finalCta,
+site-imgBox,
+site-slideOver { display: block; }
