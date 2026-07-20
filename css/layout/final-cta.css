@@ -39,6 +39,31 @@
     text-align: center;
 }
 
+/* Responsividade */
+@media (max-width: 1023px) {
+    .cta-content {
+        gap: var(--spacing-md);
+    }
 
+    .cta-content h2 {
+        font-size: var(--text-xl);
+    }
 
-    
+    .cta-content h3 {
+        font-size: var(--text-lg);
+    }
+}
+
+@media (max-width: 767px) {
+    .cta-content h2 {
+        font-size: var(--text-lg);
+    }
+
+    .cta-content h3 {
+        font-size: var(--text-base);
+    }
+
+    .final-cta {
+        padding: var(--spacing-base) 0;
+    }
+}

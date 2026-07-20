@@ -13,11 +13,11 @@ export async function getAdressByIP() {
   if (!ip) return;
 
   try {
-    let responseCity = await fetch(`http://ip-api.com/json/${ip}?fields=city`);
+    let responseCity = await fetch(`https://ip-api.com/json/${ip}?fields=city`);
     let city = await responseCity.json();
     city = city.city;
     let responseRegion = await fetch(
-      `http://ip-api.com/json/${ip}?fields=regionName`,
+      `https://ip-api.com/json/${ip}?fields=regionName`,
     );
     let region = await responseRegion.json();
     region = region.regionName;

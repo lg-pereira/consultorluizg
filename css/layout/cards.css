@@ -26,12 +26,31 @@
 }
 
 
-@media (max-width: 768px) {
-    .cards-grid {
-        grid-template-columns: 1fr;
+/* Responsividade */
+@media (max-width: 1023px) {
+    .cards-header {
+        padding-bottom: var(--spacing-md);
     }
-    
+
     .cards-header h2 {
         font-size: var(--text-2xl);
+    }
+
+    .cards-buttons {
+        gap: var(--spacing-lg);
+        padding-top: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 767px) {
+    .cards-header h2 {
+        font-size: var(--text-xl);
+    }
+
+    .cards-buttons {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        padding-top: var(--spacing-md);
+        width: 100%;
     }
 }
