@@ -4,6 +4,7 @@
     align-items: center;
     padding: var(--spacing-md);
     color: var(--color-black);
+    position: sticky;
 }
 
 .logo, .logo a {

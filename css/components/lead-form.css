@@ -85,7 +85,7 @@
     margin: var(--spacing-lg) 0;
 }
 
-button img {
+.leadmodal-submit-btn img {
     width: 32px;
     height: auto;
     filter: invert(1);
