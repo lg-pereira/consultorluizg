@@ -72,8 +72,6 @@
     filter: invert(1);
 }
 
-
-
 .footer-social-links {
     display: flex;
     gap: var(--spacing-md);
@@ -98,4 +96,26 @@
 .footer-copy {
     text-align: center;
     margin-top: var(--spacing-xl);
+}
+
+@media (min-width: 1024px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1023px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 599px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-xl);
+    }
 }

@@ -2,9 +2,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--spacing-md);
+    margin: 0 auto;
+    padding: var(--spacing-md) var(--spacing-xl);
     color: var(--color-black);
-    position: sticky;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: var(--color-white);
+    box-shadow: var(--drop-shadow-lg);
 }
 
 .logo, .logo a {
@@ -37,4 +44,20 @@
 .nav button:hover {
     cursor: pointer;
     transform: var(--default-upscale);
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+    .header {
+        padding: var(--spacing-base) var(--spacing-md);
+    }
+
+    .logo, .logo a {
+        font-size: var(--text-xl);
+    }
+
+    .nav button {
+        padding: 8px 20px;
+        font-size: var(--text-xs);
+    }
 }

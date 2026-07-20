@@ -59,12 +59,15 @@
 
 
 @media (max-width: 767px) {
-
+    #hero, #pain, #solve, #benefits, #cases, #finalCTA {
+        padding: 50px var(--spacing-md);
+    }
     #hero img {
         aspect-ratio: 1/1;
     }
     #solve {
         grid-template-columns: 1fr;
+        padding: 50px var(--spacing-md);
     }
     #solve .imgbox-section {
     grid-template-columns: 1fr;

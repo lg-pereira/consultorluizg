@@ -91,7 +91,7 @@ main {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 599px) {
 
     .cards-grid {
         grid-template-columns: 1fr;
@@ -108,8 +108,12 @@ main {
     .cta-section {
         grid-template-columns: 1fr;
     }
-
+    
+    .footer {
+        grid-template-columns: 1fr;
+    }
     .footer-container {
         grid-template-columns: 1fr;
     }
+
 }

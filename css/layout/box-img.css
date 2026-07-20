@@ -39,3 +39,30 @@
     gap: var(--spacing-md);
     padding: var(--spacing-md);
 }
+
+/* Responsividade */
+@media (max-width: 1023px) {
+    .imgbox-content {
+        gap: var(--spacing-md);
+    }
+
+    .imgbox-content h2 {
+        font-size: var(--text-xl);
+    }
+}
+
+@media (max-width: 767px) {
+    .imgbox-content h2 {
+        font-size: var(--text-lg);
+        text-align: center;
+    }
+
+    .imgbox-text {
+        font-size: var(--text-sm);
+    }
+
+    .imgbox-buttons {
+        padding: var(--spacing-base) 0;
+        justify-content: center;
+    }
+}
