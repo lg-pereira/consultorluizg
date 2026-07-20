@@ -21,7 +21,8 @@
     />
     <script src="../js/components/site-header.js" defer></script>
     <script src="../js/components/site-footer.js" defer></script>
-    <script src="../js/components/lead-modal.js" defer></script>
+    <script type="module" src="../js/components/lead-form.js"></script>
+    <script type="module" src="../js/services/get-adress.js"></script>
   </head>
   <body>
     <header>
@@ -30,8 +31,8 @@
     <main>
       <div class="leadmodal-container">
         <div class="leadmodal-header">
-          <h3 class="leadmodal-title">Vamos Alavancar suas Vendas?</h3>
-          <p class="leadmodal-subtitle">
+          <h3>Vamos <span>otimizar</span> seus processos?</h3>
+          <p>
             Preencha seus dados abaixo para iniciar seu atendimento
             personalizado no WhatsApp.
           </p>
@@ -60,6 +61,28 @@
               />
             </div>
           </div>
+          <div class="leadmodal-form-row">
+            <div class="leadmodal-form-group">
+              <label for="city">Cidade</label>
+              <input
+                required
+                id="city"
+                placeholder="Sua cidade"
+                type="text"
+                name="city"
+              />
+            </div>
+            <div class="leadmodal-form-group">
+              <label for="state">Estado</label>
+              <input
+                required
+                id="state"
+                placeholder="Seu Estado"
+                type="text"
+                name="state"
+              />
+            </div>
+          </div>
 
           <div class="leadmodal-form-group">
             <label for="phone">Telefone com DDD</label>
@@ -84,7 +107,7 @@
           </div>
 
           <button type="submit" class="leadmodal-submit-btn">
-            <span class="leadmodal-submit-text">Continuar no WhatsApp</span>
+            <span class="leadmodal-submit-text">Agendar Atendimento</span>
             <img
               src="../assets/icon/send.svg"
               alt="Enviar"

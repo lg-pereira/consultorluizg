@@ -1,3 +1,5 @@
+import { getAdressByIP } from "../services/get-adress.js";
+
 class LeadModal extends HTMLElement {
   constructor() {
     this.innerHTML = `
@@ -85,3 +87,25 @@ class LeadModal extends HTMLElement {
 }
 
 customElements.define("lead-modal", LeadModal);
+
+const form = document.querySelector(".leadmodal-form");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  onFormSubmit();
+});
+
+function onFormSubmit() {
+  let container = document.querySelector(".leadmodal-container");
+  container.replaceChildren();
+  container.innerHTML = `
+             <div class="leadmodal-header">
+              <h3>Muito obrigado pelo seu interesse!</h3>
+              <p>
+                Em breve entraremos em contato pelo WhatsApp para entender
+                melhor suas necessidades e apresentar as melhores soluções para o
+                seu negócio.
+              </p>
+            </div>
+        `;
+}
