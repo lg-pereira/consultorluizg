@@ -56,3 +56,33 @@
     background-color: var(--color-secondary);
     padding: var(--spacing-xl) var(--spacing-md);
 }
+
+
+@media (max-width: 767px) {
+
+    #hero img {
+        aspect-ratio: 1/1;
+    }
+    #solve {
+        grid-template-columns: 1fr;
+    }
+    #solve .imgbox-section {
+    grid-template-columns: 1fr;
+    }
+    #solve .img-box {
+        order: 2;
+    }
+    #solve .img-box img {
+        aspect-ratio: 16/9;
+    }
+    #solve .imgbox-content {
+        order: 1;
+    }
+    
+    #pain .img-box {
+        order: 2;
+    }
+    #pain .imgbox-content {
+        order: 1;
+    }
+}

@@ -1,0 +1,97 @@
+.leadmodal-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+  margin: 50px auto;
+  width: 100%;
+  max-width: 600px;
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--drop-shadow-md);
+  background-color: var(--color-background-1);
+  font-size: var(--text-md);
+}
+
+.leadmodal-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-base);
+}
+
+.leadmodal-header h3 {
+    text-transform: uppercase;
+    font-size: var(--text-xl);
+    font-weight: var(--font-extrabold);
+}
+
+.leadmodal-header span {
+    color: var(--color-primary);
+}
+
+.leadmodal-header p {
+    font-weight: var(--font-semibold);
+}
+
+.leadmodal-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.leadmodal-form-row {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-md);
+}
+
+.leadmodal-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base);
+  width: 100%;
+}
+
+.leadmodal-form-group label {
+  text-transform: uppercase;
+}
+
+.leadmodal-form-group input {
+  padding: var(--spacing-base);
+  border-radius: var(--radius-2xl);
+  border: none;
+  box-shadow: var(--drop-light-md);
+  background-color: var(--color-background-2);
+}
+
+.leadmodal-form-group input:focus {
+    outline: 2px solid var(--color-primary);
+    border: none;
+    box-shadow: var(--drop-shadow-md);
+}
+
+.leadmodal-submit-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-base);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--drop-shadow-md);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-weight: var(--font-bold);
+    margin: var(--spacing-lg) 0;
+}
+
+.leadmodal-submit-btn img {
+    width: 32px;
+    height: auto;
+    filter: invert(1);
+}
+
+.leadmodal-disclaimer {
+    text-align: center;
+    font-size: var(--text-sm);
+}

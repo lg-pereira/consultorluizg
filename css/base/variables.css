@@ -43,6 +43,7 @@
 
         /* Shadown and Blur */
         --drop-shadow-md: 0 3px 3px #0000001f;
+        --drop-light-md: 0 2px 2px #836e6ebc;
         --blur-sm: 8px;
         --blur-3xl: 64px;
         

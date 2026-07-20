@@ -20,7 +20,7 @@ class SiteFooter extends HTMLElement {
       <div class="footer">
         <div class="footer-container">
           <div class="footer-column">
-            <a href="#" class="footer-logo">
+            <a href="/" class="footer-logo">
               <p>
                 ${data.info.text} <span class="footer-logo-span">${data.info.span}</span>
               </p></a>

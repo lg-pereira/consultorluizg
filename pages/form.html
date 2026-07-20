@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Contato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="icon" type="image/webp" href="../assets/icon/icon64.webp" />
+    <link rel="icon" type="image/webp" href="../assets/icon/icon128.webp" />
+    <link rel="icon" type="image/webp" href="../assets/icon/icon256.webp" />
+    <link
+      rel="apple-touch-icon"
+      type="image/webp"
+      href="../assets/icon/icon256.webp"
+    />
+    <script src="../js/components/site-header.js" defer></script>
+    <script src="../js/components/site-footer.js" defer></script>
+    <script type="module" src="../js/components/lead-form.js"></script>
+    <script type="module" src="../js/services/get-adress.js"></script>
+  </head>
+  <body>
+    <header>
+      <site-header data-text="VOLK" data-span="."></site-header>
+    </header>
+    <main>
+      <div class="leadmodal-container">
+        <div class="leadmodal-header">
+          <h3>Vamos <span>otimizar</span> seus processos?</h3>
+          <p>
+            Preencha seus dados abaixo para iniciar seu atendimento
+            personalizado no WhatsApp.
+          </p>
+        </div>
+
+        <form class="leadmodal-form">
+          <div class="leadmodal-form-row">
+            <div class="leadmodal-form-group">
+              <label for="firstName">Nome</label>
+              <input
+                required
+                id="firstName"
+                placeholder="Seu nome"
+                type="text"
+                name="firstName"
+              />
+            </div>
+            <div class="leadmodal-form-group">
+              <label for="lastName">Sobrenome</label>
+              <input
+                required
+                id="lastName"
+                placeholder="Seu sobrenome"
+                type="text"
+                name="lastName"
+              />
+            </div>
+          </div>
+          <div class="leadmodal-form-row">
+            <div class="leadmodal-form-group">
+              <label for="city">Cidade</label>
+              <input
+                required
+                id="city"
+                placeholder="Sua cidade"
+                type="text"
+                name="city"
+              />
+            </div>
+            <div class="leadmodal-form-group">
+              <label for="state">Estado</label>
+              <input
+                required
+                id="state"
+                placeholder="Seu Estado"
+                type="text"
+                name="state"
+              />
+            </div>
+          </div>
+
+          <div class="leadmodal-form-group">
+            <label for="phone">Telefone com DDD</label>
+            <input
+              required
+              id="phone"
+              placeholder="(11) 00000-0000"
+              type="tel"
+              name="phone"
+            />
+          </div>
+
+          <div class="leadmodal-form-group">
+            <label for="email">E-mail</label>
+            <input
+              required
+              id="email"
+              placeholder="seu@email.com"
+              type="email"
+              name="email"
+            />
+          </div>
+
+          <button type="submit" class="leadmodal-submit-btn">
+            <span class="leadmodal-submit-text">Agendar Atendimento</span>
+            <img
+              src="../assets/icon/send.svg"
+              alt="Enviar"
+              class="leadmodal-icon"
+            />
+          </button>
+
+          <p class="leadmodal-disclaimer">
+            Ao continuar, você concorda em receber nosso contato comercial.
+          </p>
+        </form>
+      </div>
+    </main>
+  </body>
+  <footer>
+    <site-footer
+      data-text="AGÊNCIA"
+      data-span="VOLK"
+      data-desc="Consultoria de Marketing Digital e Inovação em Ads Tech focada em resultados e otimização de recursos."
+      data-cnpj="35.567.389/0001-45"
+      data-contact-name="Luiz Gustavo"
+      data-contact-phone="47991038285"
+      data-contact-email="atendimento@consultorluizg.com.br"
+      data-contact-instagram="consultorluizg"
+      data-contact-facebook="consultorluizg"
+    >
+    </site-footer>
+  </footer>
+</html>
