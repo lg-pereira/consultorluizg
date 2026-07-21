@@ -1,10 +1,10 @@
 # Agência Volk | Ads Tech & Automação
 
-Este é o repositório da landing page da **Agência Volk**, focada em serviços de consultoria de marketing digital, automação e inovação em Ads Tech. O objetivo da página é apresentar os serviços, benefícios e cases de sucesso da agência, além de capturar leads interessados através de formulários integrados.
+Este é o repositório do projeto da landing page da **Agência Volk**, focada em serviços de consultoria de marketing digital, automação e inovação em Ads Tech. O objetivo da página é apresentar os serviços, benefícios e cases de sucesso da agência, além de capturar leads interessados através de formulários integrados.
 
 ## 🚀 Tecnologias Utilizadas
 
-O projeto foi construído utilizando tecnologias web nativas (Vanilla), garantindo alta performance, baixo acoplamento e um carregamento rápido, sem a necessidade de frameworks pesados.
+O projeto foi construído utilizando tecnologias web nativas (Vanilla), com objetivo didático para compreender as tecnologias base e absorver os conhecimentos aplicados à Frameworks Modernos.
 
 - **HTML5:** Estruturação semântica do conteúdo.
 - **CSS3 (Vanilla):** Estilização customizada (`index.css` e `main.css`), focada em um design limpo e responsivo.
@@ -15,7 +15,7 @@ O projeto foi construído utilizando tecnologias web nativas (Vanilla), garantin
 
 ## 🏗️ Modo de Construção e Arquitetura
 
-O projeto adota uma arquitetura modularizada utilizando o padrão de **Web Components**. Isso significa que cada seção principal da página (cabeçalho, rodapé, seções de conteúdo, formulários) foi encapsulada em seu próprio componente customizado.
+Com objetivo didático, o projeto foi desenvolvido utilizando o padrão de **Web Components**. Isso significa que cada seção principal da página (cabeçalho, rodapé, seções de conteúdo, formulários) foi encapsulada em seu próprio componente customizado em JavaScript.
 
 ### Estrutura de Diretórios
 
@@ -31,16 +31,6 @@ O projeto adota uma arquitetura modularizada utilizando o padrão de **Web Compo
 1.  **Declaração de Componentes:** No `index.html`, tags customizadas como `<site-header>` e `<site-hero>` são utilizadas em vez de `<div>` convencionais. O conteúdo dinâmico (títulos, textos, imagens) é passado para esses componentes por meio de atributos `data-` (ex: `data-headline`, `data-image`).
 2.  **Lógica Encapsulada:** Cada componente no diretório `/js/components/` é uma classe JavaScript que estende `HTMLElement`. Esses componentes capturam os atributos passados pelo HTML e montam sua própria estrutura interna, separando a lógica de apresentação do conteúdo em si.
 3.  **Formulário de Leads:** Há um componente dedicado (`lead-form.js`) responsável por lidar com a captura de contato dos clientes em potencial.
-
-## 🛠️ Como Executar o Projeto Localmente
-
-Como o projeto é feito com HTML, CSS e JS nativos, você não precisa de um processo de _build_ (como Node.js/NPM) para rodá-lo.
-
-Basta seguir os passos abaixo:
-
-1.  Clone este repositório em sua máquina local.
-2.  Para abrir o projeto adequadamente e evitar problemas de bloqueio de CORS (que podem ocorrer ao carregar módulos ES locais ou requisições), é recomendado utilizar um servidor local simples.
-    - **Usando a extensão Live Server (VS Code):** Clique no botão "Go Live" na barra inferior do VS Code com o `index.html` aberto.
 
 ## 👨‍💻 Desenvolvedor
 
