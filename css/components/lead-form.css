@@ -95,3 +95,15 @@
     text-align: center;
     font-size: var(--text-sm);
 }
+
+@media (max-width: 767px) {
+    .leadmodal-container {
+        padding: var(--spacing-md);
+        margin: var(--spacing-lg) auto;
+        width: calc(100% - var(--spacing-lg));
+    }
+    
+    .leadmodal-form-row {
+        flex-direction: column;
+    }
+}
