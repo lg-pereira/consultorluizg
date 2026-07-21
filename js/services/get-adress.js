@@ -13,15 +13,11 @@ export async function getAdressByIP() {
   if (!ip) return;
 
   try {
-    let responseCity = await fetch(`https://ip-api.com/json/${ip}?fields=city`);
-    let city = await responseCity.json();
-    city = city.city;
-    let responseRegion = await fetch(
-      `https://ip-api.com/json/${ip}?fields=regionName`,
-    );
-    let region = await responseRegion.json();
-    region = region.regionName;
-    data = [city, region];
+    let response = await fetch(`https://api.ipapi.is?q=${ip}`);
+    let database = await response.json();
+    let city = database.location.city;
+    let state = database.location.state;
+    data = [city, state];
   } catch (error) {
     console.error("Erro ao buscar endereço:", error);
     return null;
